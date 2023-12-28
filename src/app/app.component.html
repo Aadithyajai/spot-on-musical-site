@@ -1,0 +1,113 @@
+<mat-toolbar style="background-color:teal; height: 80px; position: static">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon class="fav">menu</mat-icon>
+  </button>
+  <span class="head">SPOT-ON MUSIC</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon class="fav">favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon class="fav">share</mat-icon>
+  </button>
+  <!-- Fix: Correct the placement of the search button and input -->
+  <button mat-icon-button class="example-icon" aria-label="example-icon button with search icon">
+    <mat-icon class="fav">search</mat-icon>
+  </button>
+  <div><input type="text"></div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <mat-nav-list style="width: 200px; height: 400px;background-color:white;">
+      <a mat-list-item routerLink><mat-icon>home</mat-icon>Home</a>
+      <a mat-list-item routerLink='/play'><mat-icon>playlist_add</mat-icon>Playlist</a>
+      <a mat-list-item routerLink="/one"><mat-icon>account_circle</mat-icon>Signup</a>
+      <a mat-list-item><mat-icon>account_box</mat-icon>Login</a>
+      <a mat-list-item (click)="toggleAbout()">
+      <mat-icon>perm_identity</mat-icon>About</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <div class="about-content" [@slideDown]="aboutState">
+    we are spot on music here
+  </div>
+  <button (click)="toggleAbout()">Toggle About</button>
+
+  <mat-sidenav-content>
+    <p style="height: 100px;"></p>
+    <router-outlet></router-outlet>
+
+
+
+    <!-- Fix: Closing tag for mat-card 
+
+    <mat-card class="image-card"></mat-card>
+
+    <div class="image-container">
+      <div class="image-item">
+        <div class="black-container">
+          <div class="image-content">
+            <img src="/assets/master.jpg" alt="Master" class="resizable-image">
+          </div>
+          <div class="image-details">
+            <p class="song-name">vaathi raid</p>
+            <p class="artist-name">Anirudh</p>
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+ 
+      
+      <div class="image-container">
+      <div class="image-item">
+        <div class="black-container">
+          <div class="image-content">
+        <img src="/assets/leo.jpg" alt="Leo" class="resizable-image">
+        </div>
+        <div class="image-details">
+          <p class="song-name">leo</p>
+          <p class="artist-name">vijay</p>
+       </div>
+     </div>
+    </div>
+      <div class="spacer"></div>
+
+
+
+      <div class="image-container">
+      <div class="image-item">
+        <div class="black-container">
+          <div class="image-content">
+        <img src="/assets/don.jpg" alt="don" class="resizable-image">
+      </div>
+      <div class="image-details">
+        <p class="song-name">don</p>
+        <p class="artist-name">sivakartikeyan</p>
+      </div>
+    </div>
+   </div>
+    <div class="spacer"></div>
+ 
+
+    <div class="image-container">
+      <div class="image-item">
+    <div class="black-container">
+       <div class="image-content">
+        <img src="/assets/sarkar.jpg" alt="sarkar" class="resizable-image">
+       </div>
+      <div class="image-details">
+        <p class="song-name">sarkar</p>
+        <p class="artist-name">Anirudh</p>
+       </div>
+      </div>
+    </div>
+      
+  <div class="spacer"></div>
+    
+      <!-- Repeat the pattern for other images -->
+    
+   
+
+  
+
+

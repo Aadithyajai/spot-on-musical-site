@@ -1,0 +1,36 @@
+.loginbutton{
+    margin-left: 65%;
+    
+} 
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+   margin:0 auto;
+   max-width: 400px;
+   margin-top: 47px;
+   margin-right: 485px;
+  }
+  
+  .login-card {
+    width: 300px;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  
+  mat-form-field {
+    margin-bottom: 15px;
+    width: 100%;
+    
+  }
+  
+  .login-button {
+    width: 100%;
+    
+    
+  }
+  .login-card mat-card-content{
+    width: 100;
+  }
+  

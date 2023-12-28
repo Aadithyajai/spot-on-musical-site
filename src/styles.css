@@ -1,0 +1,19 @@
+.mat-drawer-backdrop.mat-drawer-shown{
+    background-color: black;
+}
+.loginbutton{
+    margin-left: 18%;
+    width:150px;
+    height: 50px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  app-root {
+    height: 100%;
+    overflow: auto;
+  }
+  

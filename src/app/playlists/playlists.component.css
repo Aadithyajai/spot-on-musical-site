@@ -1,0 +1,133 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.head{
+    margin-left: 550px;
+    color: white;
+}
+.fav{
+    color: white;
+
+}
+-mat-toolbar-container-background-color{
+    color: black;
+}
+.mat-icon {
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 5px;
+    left: 5px;
+    margin-right: 10px;
+}
+.mat-sidenav a:hover{
+    color: blue;
+}
+.mat-drawer-backdrop.mat-drawer-shown{
+    background-color: black;}
+.main-content{
+    flex:1;
+    padding:20px;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+}
+.image-card{
+    width: 100px;
+    
+}
+.resizable-image{
+    width:10%;
+    height:auto;
+    align-items: center;
+
+    
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;}
+
+.images{
+    width: 10%;height: auto;
+}
+/* app.component.css or your component's CSS file */
+body, html {
+    height: 100%;
+    margin: 0;
+    
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -30vh;
+  }
+  
+  .resizable-image {
+   max-width: 100px; /* Adjust the width as needed */
+   max-height: 100px;
+  }
+  
+  .spacer {
+    width: 200px;
+    height: 1px; 
+    /* Adjust the hei
+    ght as needed */
+  }
+  ::ng-deep.mat-sidenav-content{
+    overflow: hidden;
+  }
+  .mat-sidenav-container{
+    height:100vh;
+    background-color:gold;
+  }
+  .mat-sidenav-container {
+    
+    background-size: cover; /* Adjust as needed */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust as needed */
+  }
+  .see{
+    background-color:azure;
+  }
+
+  .mat-toolbar{
+    font-family: "Lucida Handwriting",cursive;
+  }
+  .image-container {
+    text-align: center;
+     /* Center the images within the container */
+  }
+  
+  .image-item {
+    display: inline-block; /* Display images in the same row */
+    margin-right: 10px; /* Adjust spacing between images */
+  }
+  
+  .resizable-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+  }
+  
+  .image-details {
+    margin-top: 10px; /* Adjust spacing between image and details */
+  }
+  
+  .song-name,
+  .artist-name {
+    margin: 5px 0;
+    font-size: 14px;
+    color:aliceblue; /* Adjust text color */
+  }
+  
+  .black-container {
+    background-color:plum;
+    padding: 10px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  
+  
